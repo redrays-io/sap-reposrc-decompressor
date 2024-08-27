@@ -1,0 +1,21 @@
+image: Visual Studio 2017
+platform: x64
+
+version: "{branch}-{build}"
+
+before_build:
+  - call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars64.bat"
+
+build_script:
+  - cd SAP-Report-Source-Decompressor
+  - MSBuild.exe /l:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /v:n
+
+test_script:
+  - MSBuild.exe /t:Test /l:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /v:n
+
+notifications:
+  - provider: Email
+    to: mail@daniel-berlin.de
+    on_build_success: false
+    on_build_failure: true
+    on_build_status_changed: true

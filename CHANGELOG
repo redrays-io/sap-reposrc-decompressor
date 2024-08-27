@@ -1,0 +1,7 @@
+2018-06-06 - 1.2.0 - Move from GitHub to GitLab
+2017-02-09 - 1.1.2 - Tune output buffer factor
+                     Various minor adjustments
+2015-07-24 - 1.1.1 - Add option for non-Unicode SAP systems by Bastian Preißler
+2015-01-05 - 1.1.0 - Major UTF-16 enhancement by Uwe Lindemann
+2012-06-24 - 1.0.1 - Revert modifications to MaxDB library
+2012-06-23 - 1.0.0 - Initial version

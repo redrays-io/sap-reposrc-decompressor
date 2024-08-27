@@ -1,0 +1,6 @@
+## Eclipse
+/.cproject
+/.project
+
+## macOS
+.DS_Store
